@@ -21,3 +21,67 @@ header > h1 {
   font-size: 0.9rem;
   font-weight: 500;
 }
+
+article.journal-entry {
+  display: flex;
+  margin: 20px;
+}
+
+/* hetr */
+
+article.journal-entry .main-image-container {
+  width: 125px;
+  height: 168px;
+  overflow: hidden;
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin-right: 19px;
+}
+
+article.journal-entry .main-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-container span.country {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-right: 12px;
+}
+
+.info-container a {
+  color: #2b283a;
+  font-size: 0.7rem;
+}
+
+.info-container a:visited {
+  color: #918e9b;
+}
+
+.info-container h2.entry-title {
+  margin-top: 7px;
+  margin-bottom: 17px;
+}
+
+.info-container p.trip-dates {
+  font-weight: bold;
+}
+
+.info-container p.entry-text {
+  line-height: 1.5;
+  font-size: 0.8rem;
+
+  /* Modern and WebKit-based browsers */
+  display: -webkit-box; /* Required for -webkit-line-clamp */
+  -webkit-line-clamp: 3; /* Limits text to 3 lines */
+  -webkit-box-orient: vertical; /* Defines box orientation */
+
+  /* Standard (future compatibility) */
+  line-clamp: 3;
+
+  /* Fallback for older or unsupported browsers */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: calc(1.5em * 3); /* Limit height to 3 lines */
+}

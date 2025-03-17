@@ -11,7 +11,13 @@
 //import Header from "../components/Header";
 
 import { Header } from "../components/Header";
+import { Entery } from "../components/Entery";
 
 export default function App() {
-  return <Header />;
+  return (
+    <>
+      <Header />
+      <Entery />
+    </>
+  );
 }
