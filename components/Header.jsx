@@ -1,8 +1,15 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+
 export function Header() {
   return (
     <header>
-      <img src="/images/globe.png" alt="globe img" />
-      <h1>my travel journal</h1>
+      <FontAwesomeIcon
+        icon={faGlobe}
+        style={{ color: "#ffffff" }}
+        className="icon"
+      />
+      <p>My Travel Journal</p>
     </header>
   );
 }

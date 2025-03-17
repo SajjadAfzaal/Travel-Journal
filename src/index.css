@@ -11,7 +11,7 @@ header {
   height: 55px;
   color: white;
 }
-header > img {
+.icon {
   height: 24px;
   background: none;
   margin-right: 7px;
